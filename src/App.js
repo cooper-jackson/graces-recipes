@@ -1,23 +1,18 @@
+import React, { useState } from 'react'
+import Form from './Form'
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [textValue, setTextValue] = useState('')
+  const [formValues, setFormValues] = useState({})
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <Form textValue={textValue} setTextValue={setTextValue} formValues={formValues} setFormValues={setFormValues}/>
+      </div>
     </div>
   );
 }

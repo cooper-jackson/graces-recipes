@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 400px;
+    /* align-items: center; */
+}
+
+form div {
+    margin: 5px;
+    text-align: right;
+}
+
+form div label {
+    width: 5em;
+    font-size: 1em;
+    text-align: right; 
+}
+
+form div input, form div button, form div select {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    border: none;
+    background: white;
+}
+
+form div select {
+    font-size: .75rem;
+}
+
+form div input {
+    width: 100%;
+}
+
+.input-button-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+form div select {
+    border-right: 1px solid grey
+}
+
+#units-selection {
+    width: 50px;
+    border-right: 1px solid grey
+}
